@@ -1,0 +1,10 @@
+{
+    "return_mode": "distributed",
+    "routing_mode": "singlepath",
+    "algorithm": "Single Path Routing",
+    "max_ep_steps": 5,
+    "topology": "Gridnet",
+    "flow_rate": 0.001,
+    "seed": 1,
+    "ned_path": "config/ned"
+}

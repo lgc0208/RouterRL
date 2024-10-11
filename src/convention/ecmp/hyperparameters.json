@@ -1,0 +1,10 @@
+{
+    "return_mode": "global",
+    "routing_mode": "multipath",
+    "algorithm": "ECMP",
+    "max_ep_steps": 10,
+    "topology": "Gridnet",
+    "flow_rate": 0.001,
+    "seed": 1,
+    "ned_path": "config/ned"
+}

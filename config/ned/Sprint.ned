@@ -1,0 +1,65 @@
+import inet.networklayer.configurator.ipv4.Ipv4NetworkConfigurator;
+import inet.node.inet.StandardHost;
+import inet.node.inet.Router;
+import ned.DatarateChannel;
+import inet.node.ethernet.Eth1G;
+
+network Sprint
+{
+    types:
+        channel C extends DatarateChannel
+        {
+            delay = 0.002s;
+            datarate = 1Mbps;
+        }
+    submodules:
+        H[11]: StandardHost {
+            parameters:
+                forwarding = true;
+            gates:
+                ethg[];
+        }
+
+        configurator: Ipv4NetworkConfigurator {
+            parameters:
+                addDefaultRoutes = false;
+        }
+
+        R[11]: Router {
+            parameters:
+                hasOspf = true;
+        }
+
+        connections allowunconnected:
+            R[0].pppg++ <--> C <--> R[2].pppg++;
+            R[0].pppg++ <--> C <--> R[4].pppg++;
+            R[0].pppg++ <--> C <--> R[7].pppg++;
+
+            R[1].pppg++ <--> C <--> R[6].pppg++;
+            R[1].pppg++ <--> C <--> R[10].pppg++;
+
+
+            R[3].pppg++ <--> C <--> R[4].pppg++;
+            R[3].pppg++ <--> C <--> R[8].pppg++;
+
+            R[4].pppg++ <--> C <--> R[5].pppg++;
+            R[4].pppg++ <--> C <--> R[8].pppg++;
+            R[4].pppg++ <--> C <--> R[9].pppg++;
+            R[4].pppg++ <--> C <--> R[10].pppg++;
+
+            R[5].pppg++ <--> C <--> R[6].pppg++;
+
+            R[6].pppg++ <--> C <--> R[7].pppg++;
+            R[6].pppg++ <--> C <--> R[10].pppg++;
+
+            R[7].pppg++ <--> C <--> R[8].pppg++;
+            R[7].pppg++ <--> C <--> R[10].pppg++;
+
+            R[8].pppg++ <--> C <--> R[9].pppg++;
+
+            R[9].pppg++ <--> C <--> R[10].pppg++;
+
+            for i=0..10 {
+                R[i].ethg++ <--> Eth1G <--> H[i].ethg++;
+            }
+}

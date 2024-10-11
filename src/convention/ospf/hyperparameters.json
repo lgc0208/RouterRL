@@ -1,0 +1,10 @@
+{
+    "routing_mode": "convention",
+    "algorithm": "OSPF",
+    "max_ep_steps": 10,
+    "topology": "Gridnet",
+    "flow_rate": 0.001,
+    "seed": 1,
+    "ned_path": "config/ned"
+  }
+  
