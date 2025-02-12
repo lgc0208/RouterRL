@@ -1,4 +1,4 @@
-<h3 align="center">RouterRL: The Standardized Network Simulation Framework that Supports Routing Strategies Corresponding to Significant DRL-Based Routing Approaches</h3>
+<h3 align="center">RouterRL: A Standardized Network Simulation Framework that Supports Routing Strategies Corresponding to Significant DRL-Based Routing Approaches</h3>
 <p align="center"><b>Data Science Center / School of Artificial Intelligence / Beijing University of Posts and Telecommunications</b></p>
 
 
