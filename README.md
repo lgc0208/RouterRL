@@ -68,7 +68,7 @@ We offer both a one-piece installation script installation and a step-by-step in
 1. Clone the respository:
 
 ```bash
-git clone http://gitlab.local/linguocheng/RouterRL.git
+git clone https://github.com/lgc0208/RouterRL.git
 ```
 
 2. Enter the code directory:
@@ -91,7 +91,7 @@ After installation, `start.sh` will be generated in `cmd` folder. If you do not 
 1. Clone the respository:
 
 ```bash
-git clone http://gitlab.local/linguocheng/RouterRL.git
+git clone https://github.com/lgc0208/RouterRL.git
 ```
 
 2. Enter the code directory:
