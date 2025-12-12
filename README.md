@@ -211,6 +211,20 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## Citation
 
+```latex
+@ARTICLE{11194738,
+  author={Lin, Guocheng and Xiao, Yang and Yu, Shudan and Yu, Ke and Liu, Jun},
+  journal={IEEE Transactions on Network Science and Engineering}, 
+  title={Constrained Probabilistic Routing With RouterRL: A General Packet-Level Network Simulation Framework}, 
+  year={2026},
+  volume={13},
+  number={},
+  pages={2604-2622},
+  keywords={Routing;Probabilistic logic;Optimization;Network topology;Topology;Routing protocols;Quality of service;Real-time systems;Safety;Robustness;Routing optimization;deep reinforcement learning;probabilistic routing;network simulation},
+  doi={10.1109/TNSE.2025.3618867}}
+
+```
+
 ## Contact
 
 Guocheng Lin (linguocheng@bupt.edu.cn), Beijing University of Posts and Telecommunications.
